@@ -1,7 +1,7 @@
 {
     "name": "wenhainan/think-token",
     "description": "auth package for thinkphp6",
-    "homepage": "https://github.com/wenhainan/tp-token",
+    "homepage": "https://github.com/wenhainan/think-token",
     "license": "Apache-2.0",
     "minimum-stability": "stable",
     "version": "1.0.0",
