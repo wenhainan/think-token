@@ -5,7 +5,18 @@
 ```shell
 composer require  wenhainan/think-token
 ```
-
+## 如何使用
+```php
+        //例如 redis-token 使用
+        $token = Random::build('alpha',50);
+        $token = new RedisToken();
+        //设置信息
+        $uid = 15;  //用户uid
+        $expire_time = 60*30; //过期时间
+        $token->set($token,$uid,$expire_time);
+        //获取信息
+        $info = $token->get($token);
+```
 
 ## 配置要求
 - PHP 5.4+
