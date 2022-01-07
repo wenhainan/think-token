@@ -1,12 +1,15 @@
 ## think-token
--  轻量级
+-  轻量级,无依赖
 -  支持redis/mysql token
--  无依赖
+## 安装 
+```shell
+composer require  wenhainan/token
+```
+
 
 ## 配置要求
-- php 5.4+
-
-
+- PHP 5.4+
+- 适用于thinkphp6
 ## 如果是mysql token需要先创建表
 ```mysql
 CREATE TABLE `user_token` (
