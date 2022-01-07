@@ -7,7 +7,7 @@
 - php 5.4+
 
 
-## mysql token需要先创建表
+## 如果是mysql token需要先创建表
 ```mysql
 CREATE TABLE `user_token` (
       `token` VARCHAR ( 50 ) NOT NULL COMMENT 'Token',
