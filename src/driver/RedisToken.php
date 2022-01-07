@@ -12,7 +12,7 @@ use think\wenhainan\Token;
 /**
  * Token操作类
  */
-class Redis extends Token
+class RedisToken extends Token
 {
 
 //    protected $options = [

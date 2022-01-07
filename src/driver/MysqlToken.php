@@ -12,9 +12,8 @@ use think\wenhainan\Token;
 /**
  * Token操作类
  */
-class Mysql extends Token
+class MysqlToken extends Token
 {
-
     /**
      * 默认配置
      * @var array

@@ -13,7 +13,7 @@ return [
     'type'     => 'redis',
     // 缓存前缀  这个可以自定义
     'key'      => '5LiH5LqL5aaC5oSP',
-    // 加密方式
+    // 加密方式  如果你不懂这个不要修改，保持默认即可
     'hashalgo' => 'ripemd160',
     // 缓存有效期 0表示永久缓存
     'expire'   => 0,
