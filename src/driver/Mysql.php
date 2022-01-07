@@ -7,12 +7,12 @@
  */
 namespace think\wenhainan\driver;
 
-use think\wenhainan\Token;
+use think\wenhainan\Driver;
 
 /**
  * Token操作类
  */
-class MysqlToken extends Token
+class Mysql extends Driver
 {
     /**
      * 默认配置
