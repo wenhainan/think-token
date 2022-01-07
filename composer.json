@@ -12,7 +12,7 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/wenhainan/thinkphp-token/issues"
+        "issues": "https://github.com/wenhainan/think-token/issues"
     },
     "require": {
         "php": ">=5.4.0"
