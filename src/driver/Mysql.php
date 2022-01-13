@@ -8,6 +8,7 @@
 namespace think\wenhainan\driver;
 
 use think\wenhainan\Driver;
+use think\facade\Db;
 
 /**
  * Token操作类
@@ -37,9 +38,9 @@ class Mysql extends Driver
             $this->options = array_merge($this->options, $options);
         }
         if ($this->options['connection']) {
-            $this->handler = db($this->options['connection'])->name($this->options['table']);
+            $this->handler = Db::name($this->options['connection'])->name($this->options['table']);
         } else {
-            $this->handler = db($this->options['table']);
+            $this->handler = Db::name($this->options['table']);
         }
     }
 
