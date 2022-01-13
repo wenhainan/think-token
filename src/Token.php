@@ -153,5 +153,4 @@ class Token
     {
         return self::init()->clear($user_id);
     }
-
 }

@@ -32,7 +32,7 @@ class Mysql extends Driver
      */
     public function __construct($options = [])
     {
-        $this->options = config('token');
+        $this->options = config('token.mysql');
         if (!empty($options)) {
             $this->options = array_merge($this->options, $options);
         }
