@@ -22,16 +22,13 @@ return [
         'password'    => '',
         'select'      => 0,
         'timeout'     => 0,
-        'expire'      => 0,
         'persistent'  => false,
-        'userprefix'  => 'up:',
+        'userprefix'  => 'user_token:',
         'tokenprefix' => 'tp:',
     ],
     // 启用mysql token必填 用于连接mysql
     'mysql'=>[
         //token存储表
-        'table'      => 'user_token',
-        //如果是用系统的数据库，默认不用填
-        'connection' => [],
+        'table'      => 'user_token'
     ]
 ];
