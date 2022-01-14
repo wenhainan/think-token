@@ -25,8 +25,6 @@ return [
     'key'      => '5LiH5LqL5aaC5oSP',
     // 加密方式  如果你不懂这个不要修改，保持默认即可
     'hashalgo' => 'ripemd160',
-    // 缓存有效期 0表示永久缓存
-    'expire'   => 0,
     //启用redis token必填 用于连接redis
     'redis'=>[
         'host'        => '127.0.0.1',
@@ -34,7 +32,6 @@ return [
         'password'    => '',
         'select'      => 0,
         'timeout'     => 0,
-        'expire'      => 0,
         'persistent'  => false,
         'userprefix'  => 'up:',
         'tokenprefix' => 'tp:',
@@ -43,10 +40,8 @@ return [
     'mysql'=>[
         //token存储表
         'table'      => 'user_token',
-        //过期时间 默认30天
-        'expire'     => 2592000,
-        //如果是用系统的数据库，默认不用填
-        'connection' => [],
+        //如果是用系统的数据库，默认不用填,保持注释状态即可
+        //'connection' => [],
     ]
 ];
 ```
