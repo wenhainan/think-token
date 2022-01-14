@@ -51,13 +51,13 @@ return [
 ```php
         use think\wenhainan\Token;
         use think\wenhainan\tool\Random;
-        //例如 redis-token 使用
+        //例如 生成一个随机token字符串  这个是自带的一个工具 
         $token = Random::build('alpha',50);
         //设置信息
         $uid = 15;  //用户uid
         $expire_time = 60*30; //过期时间
         Token::set($token,$uid,$expire_time);
-        //获取信息
+        //获取信息  过期了则为空，没过期可以获取到信息
         $info = Token::get($token);
 ```
 
@@ -65,7 +65,7 @@ return [
 - PHP 5.4+
 - 适用于thinkphp6
 ## 如果是mysql token需要先创建表  
-- 注意 如果你的数据库设置了前缀，要加上前缀哦  比如 pre_user_token
+- 注意  因为使用了tp的函数Db::name 如果你的数据库设置了前缀，要加上前缀哦  比如 pre_user_token
 ```mysql
 CREATE TABLE `user_token` (
       `token` VARCHAR ( 50 ) NOT NULL COMMENT 'Token',
