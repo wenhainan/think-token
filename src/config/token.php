@@ -20,8 +20,8 @@ return [
         'host'        => '127.0.0.1',
         'port'        => 6379,
         'password'    => '',
-        'select'      => 0,
-        'timeout'     => 0,
+        'select'      => 0,  //redis库 默认0  保持默认即可
+        'timeout'     => 0,  //redis连接超时  保持默认即可
         'persistent'  => false,
         'userprefix'  => 'user_token:',
         'tokenprefix' => 'tp:',
