@@ -46,7 +46,6 @@ return [
 ];
 ```
 
-
 ## 如何使用
 ```php
         use think\wenhainan\Token;
@@ -62,7 +61,7 @@ return [
 ```
 
 ## 配置要求
-- PHP 5.4+
+- PHP 7.1+
 - 适用于thinkphp6
 ## 如果是mysql token需要先创建表  
 - 注意  因为使用了tp的函数Db::name 如果你的数据库设置了前缀，要加上前缀哦  比如 pre_user_token
